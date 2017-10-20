@@ -17,7 +17,17 @@ julia> Pkg.clone("https://github.com/jdeldre/BookExamples")
 ```
 Now you've installed the necessary modules. The notebooks in the `examples` folder are ready to run.
 
-Occasionally, you should run
+To install the examples in a local working directory on your system, then first type
+```julia
+julia> using BookExamples
+```
+This might take a minute or two to run, since it precompiles all of the modules. Then, type
+```julia
+julia> install_examples("ExamplesFolder")
+```
+This command creates a folder called `ExamplesFolder` in your home directory and copies all of the notebooks from the package into this folder. These copied notebooks are the ones you should use.
+
+As a general rule, it is a good idea to run
 ```julia
 julia> Pkg.update()
 ```
