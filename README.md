@@ -25,10 +25,10 @@ This might take a minute or two to run, since it precompiles all of the modules.
 ```julia
 julia> install_examples("ExamplesFolder")
 ```
-This command creates a folder called `ExamplesFolder` in your home directory and copies all of the notebooks from the package into this folder. These copied notebooks are the ones you should use.
+This command creates a folder called `ExamplesFolder` in your home directory and copies all of the notebooks from the package into this folder. These copied notebooks are the ones you should use. If you've already run this before and wish to refresh the notebooks, you will need to manually delete any existing notebooks in that folder, because the script will not overwrite them. (This prevents accidentally overwriting notebooks that you've been working on and modifying.)
 
 As a general rule, it is a good idea to run
 ```julia
 julia> Pkg.update()
 ```
-in order to get the most recent versions of the packages.
+in order to get the most recent versions of the packages. You might need to re-run `install_examples` once you've done this to install any changes to the notebooks.
