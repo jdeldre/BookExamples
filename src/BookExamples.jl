@@ -8,7 +8,7 @@ import PotentialFlow.Utils:@get, MappedVector
 
 import PyCall
 
-export plot_streamlines, conformal_grid
+export install_examples, plot_streamlines, conformal_grid
 
 const mygreen = [151/255,180/255,118/255];
 const mygreen2 = [113/255,161/255,103/255];
@@ -27,6 +27,23 @@ struct PlotStyle
 
 end
 
+function install_examples(dir::String)
+
+  fulldir = joinpath(homedir(),dir)
+  if !isdir(fulldir)
+      mkdir(fulldir)
+  end
+
+  examplesroot = joinpath(Pkg.dir("BookExamples"),"examples")
+  for (root, dirs, files) in walkdir(examplesroot)
+    for file in files
+        if contains(file[end-5:end], ".ipynb") && root == examplesroot
+            cp(joinpath(root, file),joinpath(fulldir,file)) # path to files
+        end
+    end
+  end
+
+end
 
 function PlotStyle()
   PyCall.PyDict(matplotlib["rcParams"])["font.family"] = "STIXGeneral";
