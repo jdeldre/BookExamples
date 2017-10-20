@@ -1,5 +1,5 @@
 # BookExamples
-This module contains notebooks that support the book *Mathematical Modeling of Unsteady Inviscid Flows* by Jeff D. Eldredge
+This module contains notebooks that support the book *Mathematical Modeling of Unsteady Inviscid Flows* by Jeff D. Eldredge.
 
 This package requires Julia `0.6-` and above.
 
