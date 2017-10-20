@@ -3,7 +3,7 @@ This module contains notebooks that support the book *Mathematical Modeling of U
 
 This package requires Julia `0.6-` and above.
 
-To get started, install the PotentialFlow module by typing the following at the julia command prompt. (Note that this can be done from the Julia REPL or from within an IJulia notebook, such as on JuliaBox.)
+To get started, install the PotentialFlow module by typing the following in an interactive Julia session. (Note that this session could be the Julia REPL or from within an IJulia notebook, such as on JuliaBox.)
 ```julia
 julia> Pkg.clone("https://github.com/jdeldre/PotentialFlow.jl.git")
 ```
