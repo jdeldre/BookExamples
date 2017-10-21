@@ -34,7 +34,7 @@ function install_examples(dir::String)
       mkdir(fulldir)
   end
 
-  examplesroot = joinpath(Pkg.dir("BookExamples"),"examples")
+  examplesroot = joinpath(Pkg.dir("BookExamples"),"binder/notebooks")
   for (root, dirs, files) in walkdir(examplesroot)
     for file in files
         if contains(file[end-5:end], ".ipynb") && root == examplesroot
