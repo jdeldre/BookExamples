@@ -3,6 +3,7 @@
 
 julia -e '
 Pkg.checkout("PotentialFlow","je/book")
+Pkg.clone("https://github.com/jdeldre/BookExamples")
 using BookExamples
 pyplot()
 '
