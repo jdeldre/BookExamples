@@ -3,7 +3,7 @@
 
 julia -e '
 Pkg.checkout("PotentialFlow","je/book")
-using PotentialFlow
+Pkg.checkout("BookExamples")
 using BookExamples
 pyplot()
 '
