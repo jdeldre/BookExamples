@@ -1,0 +1,9 @@
+#
+/bin/bash
+
+julia -e '
+Pkg.checkout("PotentialFlow","je/book")
+using PotentialFlow
+using BookExamples
+pyplot()
+'
