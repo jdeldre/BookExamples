@@ -1,34 +1,33 @@
-# BookExamples
-This module contains notebooks that support the book *Mathematical Modeling of Unsteady Inviscid Flows* by Jeff D. Eldredge.
+#### [**Mathematical Modeling of Unsteady Inviscid Flows**](https://www.springer.com/gp/book/9783030183189)
+**by Jeff D. Eldredge** (Springer, 2019)
 
-This package requires Julia `0.6-` and above.
+![BookCover](binder/notebooks/figures/9783030183189-smaller.png)
 
-To get started, install the PotentialFlow module by typing the following in an interactive Julia session. (Note that this session could be the Julia REPL or from within an IJulia notebook, such as on JuliaBox.)
-```julia
-julia> Pkg.clone("https://github.com/jdeldre/PotentialFlow.jl.git")
-```
-That will take a minute or so as all of the dependencies are installed. Then, type
-```julia
-julia> Pkg.checkout("PotentialFlow","je/book")
-```
-Finally,
-```julia
-julia> Pkg.clone("https://github.com/jdeldre/BookExamples")
-```
-Now you've installed the necessary modules. The notebooks in the `examples` folder are ready to run.
+These Jupyter notebooks and associated code serve as a companion to the book. Though they can be used in a standalone manner, they refer to details and concepts explained in the book, and the notebooks refer to specific sections and equations in the book.
 
-To install the examples in a local working directory on your system, then first type
-```julia
-julia> using BookExamples
-```
-This might take a minute or two to run, since it precompiles all of the modules. Then, type
-```julia
-julia> install_examples("ExamplesFolder")
-```
-This command creates a folder called `ExamplesFolder` in your home directory and copies all of the notebooks from the package into this folder. (You can change this to any other name you'd prefer.) The notebooks copied into this folder are the ones you should use. If you've already run this before and wish to refresh the notebooks, you will need to manually delete any existing notebooks in that folder, because the script will not overwrite them. (This prevents accidentally overwriting notebooks that you've been working on and modifying.)
+The notebooks are powered by the [`PotentialFlow`](https://github.com/darwindarak/PotentialFlow.jl) package, written in the [Julia language](https://julialang.org/) by Darwin Darakananda and Jeff D. Eldredge. *The code is released under the [MIT license](https://opensource.org/licenses/MIT).*
+<hr />
 
-As a general rule, it is a good idea to run
-```julia
-julia> Pkg.update()
-```
-in order to get the most recent versions of the packages. You might need to re-run `install_examples` once you've done this to install any changes to the notebooks.
+## Table of Notebooks
+
+The following table of notebooks is coordinated with that of the book, and chapter names are from the book itself.
+
+#### Chapter 3. Foundational Concepts
+
+- [Streamfunction of rigid-body motion](3.1-StreamfunctionOfRigidBody.ipynb)
+
+#### Chapter 4. General Results of Incompressible Flow About a Body
+
+#### Chapter 5. Edge Conditions
+
+#### Chapter 6. Force and Moment on a Body
+
+#### Chapter 7. Transport of Vortex Elements
+
+#### Chapter 8. Flow about a Two-Dimensional Flat Plate
+
+#### Chapter 9. Examples of Two-Dimensional Flow Modeling
+
+#### Chapter 10. Rigid Motion of an Ellipsoidal Body
+
+#### Appendix. Mathematical Tools
