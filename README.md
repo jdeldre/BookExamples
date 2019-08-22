@@ -1,7 +1,7 @@
 #### [**Mathematical Modeling of Unsteady Inviscid Flows**](https://www.springer.com/gp/book/9783030183189)
 **by Jeff D. Eldredge** (Springer, 2019)
 
-![BookCover](binder/notebooks/figures/9783030183189-smaller.png)
+![BookCover](https://github.com/jdeldre/BookExamples.jl/raw/master/binder/notebooks/figures/9783030183189-smaller.png)
 
 These Jupyter notebooks and associated code serve as a companion to the book. Though they can be used in a standalone manner, they refer to details and concepts explained in the book, and the notebooks refer to specific sections and equations in the book.
 
