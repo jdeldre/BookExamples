@@ -6,6 +6,5 @@
 This repository contains Jupyter notebooks and associated code that serve as a companion to the book. Though they can be used in a standalone manner, they refer to details and concepts explained in the book, and the notebooks refer to specific sections and equations in the book.
 
 The notebooks are powered by the [`PotentialFlow`](https://github.com/darwindarak/PotentialFlow.jl) package, written in the [Julia language](https://julialang.org/) by Darwin Darakananda and Jeff D. Eldredge. *The code is released under the [MIT license](https://opensource.org/licenses/MIT).*
-<hr />
 
 To get started, please visit the [Table of Notebooks](https://github.com/jdeldre/BookExamples/blob/master/binder/notebooks).
