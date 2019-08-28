@@ -32,9 +32,9 @@ version = "1.0.0"
 
 [[BandedMatrices]]
 deps = ["FillArrays", "LazyArrays", "LinearAlgebra", "MatrixFactorizations", "Random", "SparseArrays"]
-git-tree-sha1 = "414a1b7e37d613b8fb7f0e5732499cd30dabfa99"
+git-tree-sha1 = "cdda54b29a1c52fa33defc0c61e3b8bb61f73d15"
 uuid = "aae01518-5342-5314-be14-df237901396f"
-version = "0.10.0"
+version = "0.10.1"
 
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
@@ -210,9 +210,9 @@ version = "0.2.0"
 
 [[Distances]]
 deps = ["LinearAlgebra", "Statistics"]
-git-tree-sha1 = "44bd29b50552dfd0a0b674b925de2719f3b9bb0b"
+git-tree-sha1 = "23717536c81b63e250f682b0e0933769eecd1411"
 uuid = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
-version = "0.8.1"
+version = "0.8.2"
 
 [[Distributed]]
 deps = ["Random", "Serialization", "Sockets"]
@@ -500,9 +500,11 @@ version = "0.4.0"
 
 [[PotentialFlow]]
 deps = ["ColorTypes", "DocStringExtensions", "FFTW", "ForwardDiff", "Future", "Interpolations", "LinearAlgebra", "MacroTools", "MappedArrays", "PlotUtils", "RecipesBase", "Reexport", "SchwarzChristoffel"]
-git-tree-sha1 = "b7ebbbfe3c894b9e5e58c7244fa2c2432a337e13"
+git-tree-sha1 = "8db635039da1f052c48a14e5bf6ba2c26decf71c"
+repo-rev = "master"
+repo-url = "https://github.com/darwindarak/PotentialFlow.jl.git"
 uuid = "73af2aaf-3f58-5b29-82a9-435ecf827f5b"
-version = "0.1.4"
+version = "0.1.5"
 
 [[Printf]]
 deps = ["Unicode"]
