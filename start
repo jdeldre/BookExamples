@@ -1,4 +1,5 @@
-#
-/bin/bash
+#!/bin/bash
 
 julia -e 'using Pkg; pkg"precompile"'
+
+exec "$@"
