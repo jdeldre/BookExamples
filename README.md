@@ -10,4 +10,4 @@ The notebooks are powered by the [`PotentialFlow`](https://github.com/darwindara
 To get started
 - The notebooks are [here](https://github.com/jdeldre/BookExamples/blob/master/src)
 - Run notebooks remotely from your browser in binder:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jdeldre/BookExamples/master?filepath=src%2FIndex.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jdeldre/BookExamples/master?urlpath=lab/tree/src/Index.ipynb)
