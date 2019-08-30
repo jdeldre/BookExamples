@@ -500,9 +500,9 @@ version = "0.4.0"
 
 [[PotentialFlow]]
 deps = ["ColorTypes", "DocStringExtensions", "FFTW", "ForwardDiff", "Future", "Interpolations", "LinearAlgebra", "MacroTools", "MappedArrays", "PlotUtils", "RecipesBase", "Reexport", "SchwarzChristoffel"]
-git-tree-sha1 = "8db635039da1f052c48a14e5bf6ba2c26decf71c"
+git-tree-sha1 = "08e3aa82e77f911b9039ecd8234d60bfbd7e16fd"
 repo-rev = "master"
-repo-url = "https://github.com/darwindarak/PotentialFlow.jl.git"
+repo-url = "/Users/jeff/PotentialFlow"
 uuid = "73af2aaf-3f58-5b29-82a9-435ecf827f5b"
 version = "0.1.5"
 
