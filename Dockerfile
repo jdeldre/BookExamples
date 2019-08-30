@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 # Julia setup
 # JULIA_PKGDIR will soon be deprecated; keep an eye on the jupyter upstream to see the new standard
 ENV JULIA_PKGDIR=/opt/julia
-ENV JULIA_VERSION=1.1.0
+ENV JULIA_VERSION=1.2.0
 
 # sudo setup
 ADD /sudoers.txt /etc/sudoers
@@ -55,7 +55,7 @@ RUN mkdir /etc/julia && \
 
 # PackageCompiler stuff
 USER $NB_USER
-RUN julia -e "using Pkg; pkg\"add PackageCompiler Plots PyPlot PotentialFlow\"; using PackageCompiler; compile_incremental(:Plots, :PyPlot, :PotentialFlow, force = true)"
+RUN julia -e "using Pkg; pkg\"add PackageCompiler Plots Conda PyCall PyPlot PotentialFlow\"; using Conda; Conda.add("matplotlib"); Conda.add("pyqt"); using PackageCompiler; compile_incremental(:Plots, :PyPlot, :PotentialFlow, force = true)"
 # QELP, QELAP
 RUN julia -e "using Pkg; pkg\"add IJulia\"; pkg\"precompile\""
 
