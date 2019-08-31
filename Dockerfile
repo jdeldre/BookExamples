@@ -55,7 +55,7 @@ RUN mkdir /etc/julia && \
 
 # PackageCompiler stuff
 USER $NB_USER
-RUN julia -e "using Pkg; pkg\"add PackageCompiler Plots Conda PyCall PyPlot PotentialFlow\"; using Conda; Conda.add("matplotlib"); Conda.add("pyqt"); using PackageCompiler; compile_incremental(:Plots, :PyPlot, :PotentialFlow, force = true)"
+RUN julia -e "using Pkg; pkg\"add PackageCompiler Plots Conda PyCall PyPlot PotentialFlow\"; using Conda; Conda.add(\"matplotlib\"); Conda.add(\"pyqt\"); using PackageCompiler; compile_incremental(:Plots, :PyPlot, :PotentialFlow, force = true)"
 # QELP, QELAP
 RUN julia -e "using Pkg; pkg\"add IJulia\"; pkg\"precompile\""
 
